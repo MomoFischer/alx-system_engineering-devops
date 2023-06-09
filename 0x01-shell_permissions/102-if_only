@@ -1,2 +1,2 @@
 #!/bin/bash
-chown betty $(ls -l | grep hello | grep guillaume)
+find . -type f -user guillaume -exec chown betty {} \;
