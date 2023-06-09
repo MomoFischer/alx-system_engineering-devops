@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -user guillaume -exec chown betty {}
+chown --from=guillaume -R betty *
